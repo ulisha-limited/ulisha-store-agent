@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Code_Pro, Maven_Pro } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-heading",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mavenPro = Maven_Pro({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -23,12 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${sourceCodePro.variable} ${mavenPro.variable}`}
+    >
+      <head>
+        <meta name="hostname" content="ai.melvinjonesrepol.com" />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
