@@ -1,7 +1,9 @@
 {
-  "name": "melvin-ai",
+  "name": "ulisha-store-agent",
   "version": "0.1.0",
   "private": true,
+  "license": "Apache-2.0",
+  "author": "Ulisha Limited",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,10 +11,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/vision": "^5.3.3",
+    "@supabase/ssr": "^0.7.0",
     "lucide-react": "^0.541.0",
     "next": "15.4.6",
+    "next-recaptcha-v3": "^1.5.2",
+    "nextjs-toploader": "^3.8.16",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "redis": "^5.8.2",
     "uuid": "^11.1.0",
     "zod": "^4.1.0",
     "zustand": "^5.0.8"

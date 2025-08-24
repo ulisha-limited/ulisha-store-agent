@@ -1,3 +1,9 @@
+/**
+ * Copyright 2025 Ulisha Limited
+ * Licensed under the Apache License, Version 2.0
+ * See LICENSE file in the project root for full license information.
+ */
+
 import { useChatStore } from "@/store/chats";
 import { Menu, Plus } from "lucide-react";
 
@@ -18,7 +24,7 @@ export default function Navbar({ toggleSidebar }: NavbarProps) {
       </button>
 
       <h1 className="text-lg font-semibold">
-        {activeChatId ? activeChatTitle : "Melvin AI"}
+        {activeChatId ? activeChatTitle : "Ulisha Agent"}
       </h1>
 
       <div className="flex items-center space-x-4">

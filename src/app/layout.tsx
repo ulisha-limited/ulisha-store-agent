@@ -1,3 +1,9 @@
+/**
+ * Copyright 2025 Ulisha Limited
+ * Licensed under the Apache License, Version 2.0
+ * See LICENSE file in the project root for full license information.
+ */
+
 import type { Metadata } from "next";
 import { Source_Code_Pro, Maven_Pro } from "next/font/google";
 import "./globals.css";
@@ -17,8 +23,8 @@ const mavenPro = Maven_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Melvin AI",
-  description: "Melvin AI - Your AI Assistant",
+  title: "Ulisha Agent",
+  description: "Your personalize store agent assistance.",
 };
 
 export default function RootLayout({

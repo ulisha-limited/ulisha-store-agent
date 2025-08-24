@@ -1,5 +1,10 @@
+/**
+ * Copyright 2025 Ulisha Limited
+ * Licensed under the Apache License, Version 2.0
+ * See LICENSE file in the project root for full license information.
+ */
+
 import { useChatStore } from "@/store/chats";
-import Link from "next/link";
 
 interface SidebarProps {
   isOpen: boolean;
